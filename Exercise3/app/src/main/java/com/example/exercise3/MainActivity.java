@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 99 && resultCode == RESULT_OK) {
+        if (requestCode == 99 && resultCode == 33) {
             if (data != null) {
                 String returnedText = data.getStringExtra("EditedText");
                 TeacherContent.setText(returnedText); // gán nội dung đã chỉnh sửa vào EditText số 2

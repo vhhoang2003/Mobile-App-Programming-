@@ -45,7 +45,7 @@ public class Second_activity extends AppCompatActivity {
 
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("EditedText", editedText); // gửi lại nội dung
-                setResult(RESULT_OK, resultIntent); // báo kết quả OK
+                setResult(33, resultIntent); // báo kết quả OK
                 finish(); // quay lại MainActivity
             }
         });
