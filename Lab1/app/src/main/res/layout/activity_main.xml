@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student's Information"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name:" />
+
+        <EditText
+            android:id="@+id/inputFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter full name"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Student ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID:" />
+
+        <EditText
+            android:id="@+id/inputStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter student ID"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Class -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class:" />
+
+        <EditText
+            android:id="@+id/inputClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter class"
+            android:layout_marginBottom="12dp" />
+
+        <!-- School Year -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Year:" />
+
+        <EditText
+            android:id="@+id/inputSchoolYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter school year"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Year Level -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Level:" />
+
+        <RadioGroup
+            android:id="@+id/yearRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton android:id="@+id/radioFresher" android:text="Fresher" />
+            <RadioButton android:id="@+id/radioSophomore" android:text="Sophomore" />
+            <RadioButton android:id="@+id/radioJunior" android:text="Junior" />
+            <RadioButton android:id="@+id/radioSenior" android:text="Senior" />
+        </RadioGroup>
+
+        <!-- Department -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department:" />
+
+        <CheckBox
+            android:id="@+id/checkboxElectronics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronics" />
+
+        <CheckBox
+            android:id="@+id/checkboxCE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer and Embedded Systems" />
+
+        <CheckBox
+            android:id="@+id/checkboxNetcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network and Telecommunications"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Self-develop Planning -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self-develop Planning:"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputSelfPlanning"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Write your personal growth plan here..."
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="10"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+</ScrollView>
