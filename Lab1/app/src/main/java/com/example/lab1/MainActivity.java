@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText inputFullName, inputStudentID, inputClass, inputSchoolYear, inputSelfPlanning;
+    EditText inputFullName, inputStudentID, inputClass, inputSchoolYear, inputPhoneNumber, inputSelfPlanning;
     RadioGroup yearRadioGroup;
     CheckBox checkboxElectronics, checkboxCE, checkboxNetcom;
     Button btnSubmit;
@@ -15,12 +15,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Đảm bảo file XML tên là activity_main.xml
+        setContentView(R.layout.activity_main);
 
         inputFullName = findViewById(R.id.inputFullName);
         inputStudentID = findViewById(R.id.inputStudentID);
         inputClass = findViewById(R.id.inputClass);
         inputSchoolYear = findViewById(R.id.inputSchoolYear);
+        inputPhoneNumber = findViewById(R.id.inputPhoneNumber);
         inputSelfPlanning = findViewById(R.id.inputSelfPlanning);
         yearRadioGroup = findViewById(R.id.yearRadioGroup);
 
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     inputSchoolYear.getText().toString(),
                     year,
                     departments.toString(),
-                    inputSelfPlanning.getText().toString()
+                    inputSelfPlanning.getText().toString(),
+                    inputPhoneNumber.getText().toString()
             );
 
             Intent intent = new Intent(MainActivity.this, Second_activity.class);
@@ -56,12 +58,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Khôi phục trạng thái nếu có
         if (savedInstanceState != null) {
             inputFullName.setText(savedInstanceState.getString("fullName"));
             inputStudentID.setText(savedInstanceState.getString("studentID"));
             inputClass.setText(savedInstanceState.getString("className"));
             inputSchoolYear.setText(savedInstanceState.getString("schoolYear"));
+            inputPhoneNumber.setText(savedInstanceState.getString("phoneNumber"));
             inputSelfPlanning.setText(savedInstanceState.getString("plan"));
             yearRadioGroup.check(savedInstanceState.getInt("yearChecked"));
             checkboxElectronics.setChecked(savedInstanceState.getBoolean("check1"));
@@ -78,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("studentID", inputStudentID.getText().toString());
         outState.putString("className", inputClass.getText().toString());
         outState.putString("schoolYear", inputSchoolYear.getText().toString());
+        outState.putString("phoneNumber", inputPhoneNumber.getText().toString());
         outState.putString("plan", inputSelfPlanning.getText().toString());
         outState.putInt("yearChecked", yearRadioGroup.getCheckedRadioButtonId());
         outState.putBoolean("check1", checkboxElectronics.isChecked());

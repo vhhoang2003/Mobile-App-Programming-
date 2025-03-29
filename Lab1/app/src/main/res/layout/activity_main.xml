@@ -74,6 +74,21 @@
             android:hint="Enter school year"
             android:layout_marginBottom="12dp" />
 
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:" />
+
+        <EditText
+            android:id="@+id/inputPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+
         <!-- Year Level -->
         <TextView
             android:layout_width="wrap_content"
