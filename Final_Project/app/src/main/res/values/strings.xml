@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="action_go">Go</string>
+    <string name="baking_title">Baking with Gemini</string>
+    <string name="label_prompt">Prompt</string>
+    <string name="prompt_placeholder">Provide a recipe for the baked goods in the image</string>
+    <string name="image1_description">Cupcake</string>
+    <string name="image2_description">Cookies</string>
+    <string name="image3_description">Cake</string>
+    <string name="results_placeholder">(Results will appear here)</string>
+
+    <!-- App name -->
+    <string name="app_name" tools:ignore="DuplicateDefinition">Student AI Assistant</string>
+    <!-- Form screen -->
+    <string name="title_student_info">Student\'s Information</string>
+    <string name="hint_full_name">Enter full name</string>
+    <string name="hint_student_id">Enter student ID</string>
+    <string name="hint_class">Enter class</string>
+    <string name="hint_school_year">Enter school year</string>
+    <string name="hint_phone_number">Enter phone number</string>
+    <string name="label_year_level">Year Level:</string>
+    <string name="label_departments">Department:</string>
+    <string name="label_self_plan">Self-develop Plan:</string>
+    <string name="hint_self_plan">Write your personal growth plan here...</string>
+    <string name="action_submit">Submit</string>
+
+    <!-- Year levels -->
+    <string name="year_fresher">Fresher</string>
+    <string name="year_sophomore">Sophomore</string>
+    <string name="year_junior">Junior</string>
+    <string name="year_senior">Senior</string>
+
+    <!-- Departments -->
+    <string name="dept_electronics">Electronics</string>
+    <string name="dept_embedded">Embedded Systems</string>
+    <string name="dept_telecom">Telecommunications</string>
+
+    <!-- Detail screen -->
+    <string name="action_back">Back</string>
+    <string name="action_call">Call</string>
+    <string name="action_message">Message</string>
+    <string name="action_camera">Camera</string>
+    <string name="prompt_gemini">Ask Gemini about this student...</string>
+    <string name="action_ask_gemini">Ask Gemini</string>
+
+    <!-- Gemini responses -->
+    <string name="label_loading">Loading...</string>
+    <string name="label_error">Error:</string>
+    <string name="label_gemini_says">Gemini says:</string>
+</resources>
+
