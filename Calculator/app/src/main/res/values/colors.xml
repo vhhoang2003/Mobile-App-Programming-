@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Số (cam) -->
+    <color name="btn_clr">#f57c00</color>
+    <color name="selected">#ef6c00</color>
+
+    <!-- Toán tử (xanh lá) -->
+    <color name="green">#4caf50</color>
+    <color name="operator_btn_clr">#43a047</color>
+
+    <!-- Nút chức năng (xanh dương) -->
+    <color name="function_btn_clr">#2196f3</color>
+
+    <!-- Màu chữ -->
+    <color name="white">#ecf0f1</color>
+</resources>
