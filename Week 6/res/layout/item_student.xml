@@ -1,0 +1,11 @@
+<LinearLayout ... orientation="horizontal" padding="8dp">
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"/>
+    <LinearLayout ... orientation="vertical">
+        <TextView android:id="@+id/tvName" ... />
+        <TextView android:id="@+id/tvMssv" ... />
+    </LinearLayout>
+</LinearLayout>

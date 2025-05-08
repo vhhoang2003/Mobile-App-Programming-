@@ -1,0 +1,5 @@
+<LinearLayout ... orientation="vertical">
+    <ImageView android:id="@+id/imgAvatarDetail" ... />
+    <TextView android:id="@+id/tvNameDetail" ... />
+    <TextView android:id="@+id/tvMssvDetail" ... />
+</LinearLayout>
